@@ -3,28 +3,10 @@ import { Workflow, Brain, Zap, Code } from "lucide-react";
 
 const experiences = [
   {
-    year: "2024",
-    title: "Senior AI Automation Engineer",
-    description: "Building enterprise-scale automation workflows",
-    icon: Workflow,
-  },
-  {
-    year: "2023",
-    title: "AI Integration Specialist",
-    description: "Integrating LLMs with business processes",
-    icon: Brain,
-  },
-  {
-    year: "2022",
+    year: "2025",
     title: "Workflow Automation Developer",
     description: "Creating n8n workflows for diverse industries",
     icon: Zap,
-  },
-  {
-    year: "2021",
-    title: "Full-Stack Developer",
-    description: "Building web applications and APIs",
-    icon: Code,
   },
 ];
 
@@ -47,7 +29,7 @@ export const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-1 gap-8 mb-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -64,21 +46,7 @@ export const About = () => {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="glass-card p-8 rounded-xl hover-glow"
-          >
-            <h3 className="text-2xl font-semibold mb-4 text-accent">Approach</h3>
-            <p className="text-foreground leading-relaxed">
-              I believe in building automation that's both powerful and maintainable. Every workflow
-              I design prioritizes clarity, scalability, and real business impact. From API
-              integrations to custom LLM implementations, I focus on solutions that work reliably
-              in production.
-            </p>
-          </motion.div>
+
         </div>
 
         {/* Timeline */}
