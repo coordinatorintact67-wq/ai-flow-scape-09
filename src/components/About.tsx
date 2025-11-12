@@ -39,10 +39,7 @@ export const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4 text-primary">Expertise</h3>
             <p className="text-foreground leading-relaxed">
-              Specializing in AI automation and workflow design, I create seamless integrations
-              between AI models and business systems. My work focuses on making AI practical and
-              accessible through tools like n8n, enabling organizations to automate complex
-              processes with intelligent decision-making.
+              I’m an AI Engineer with hands-on experience in building intelligent automation systems and custom AI solutions. My expertise includes working with Python, OpenAI Agent SDK, MCP (Model Context Protocol), and n8n for creating advanced AI workflows and integrations. I also have experience with AgentKit, enabling seamless connections between AI models and real-world applications.
             </p>
           </motion.div>
 

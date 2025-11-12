@@ -3,34 +3,19 @@ import { Zap, Brain, GitBranch, Code2, Database, Cloud } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "AI & LLMs",
+    title: "Development",
+    icon: Code2,
+    skills: ["Python"],
+  },
+  {
+    title: "Artificial Intelligence",
     icon: Brain,
-    skills: ["OpenAI GPT-4", "Claude", "LangChain", "Prompt Engineering", "RAG Systems"],
+    skills: ["OpenAI agent SDK", "MCP (Model Context Protocol)"],
   },
   {
     title: "Automation",
     icon: Zap,
-    skills: ["n8n", "Zapier", "Make", "Workflow Design", "API Integration"],
-  },
-  {
-    title: "Development",
-    icon: Code2,
-    skills: ["Node.js", "Python", "TypeScript", "REST APIs", "WebSockets"],
-  },
-  {
-    title: "Version Control",
-    icon: GitBranch,
-    skills: ["Git", "GitHub", "CI/CD", "Documentation", "Code Review"],
-  },
-  {
-    title: "Databases",
-    icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Vector DBs", "SQL Optimization"],
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: Cloud,
-    skills: ["AWS", "Docker", "Kubernetes", "Serverless", "Monitoring"],
+    skills: ["n8n", "AgentKit"],
   },
 ];
 
@@ -92,7 +77,7 @@ export const Skills = () => {
                         delay: i * 0.2,
                       }}
                     />
-                    <span className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    <span className={["Development", "Artificial Intelligence", "Automation"].includes(category.title) ? "text-xl text-primary font-semibold" : "text-sm text-muted-foreground hover:text-foreground transition-colors"}>
                       {skill}
                     </span>
                   </motion.div>
@@ -128,7 +113,7 @@ export const Skills = () => {
         >
           <h3 className="text-2xl font-bold mb-4">Core Specialization</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {["AI Automation", "n8n Workflows", "OpenAI Integration", "Workflow Design", "API Development", "LLM Fine-tuning", "Vector Databases", "Process Optimization"].map((skill, i) => (
+            {["Python", "OpenAI agent SDK", "MCP", "n8n", "Agentkit"].map((skill, i) => (
               <motion.span
                 key={skill}
                 initial={{ opacity: 0, scale: 0.8 }}
